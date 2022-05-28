@@ -228,6 +228,7 @@ class m220521_171255_create_database extends Migration
             'CASCADE'
         );
         $this->createTable('content', [
+            'id' => Schema::TYPE_PK,
             'group_id' => Schema::TYPE_INTEGER . ' NOT NULL', 
             'sequence' => Schema::TYPE_TINYINT . ' NOT NULL',
             'value' => Schema::TYPE_STRING . ' NOT NULL',
